@@ -1,0 +1,92 @@
+// .top-container{
+//     height: 500px;
+//     width: 750px;
+//     background-color: blue;
+// }
+// .inner-container{
+// border: 1px solid black;
+
+// }
+// .checktop{
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+// .box-1{
+// width: 100%;
+// height: 70%;
+// display: flex;
+// flex-direction: column;
+// justify-content: space-between;
+// }
+// .box-1 h3{
+//   color: white;
+// }
+// .box-1 button{
+//   background-color: yellow;
+//   font-weight: bold;
+// padding: 10px 10px;
+// }
+// .box-2{
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+// }
+// .box-2 button{
+//   border-radius: 50px;
+// }
+// .button-Align{
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100%;
+// }
+// .button-Align button{
+//   margin-top: 30px;
+//   padding: 0px 30px;
+// }
+// .middle-align{
+//   text-align: center;
+// }
+// .imageValue{
+//   margin-bottom: 40px;
+// }
+// .imageValue h3{
+//   font-size: x-large;
+// }
+// .imageValue img{
+//   height: 70px;
+//   width: 70px;
+// }
+// .imageValue img:hover{
+//   height: 73px;
+//   width: 73px;
+// }
+.wrapper{
+  height: max-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-container{
+  background-color: rgb(62, 168, 249);
+  text-align: center;
+  height: 500px;
+  width: 400px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inner-container button{
+  width: 200px;
+  padding: 10px 10px;
+  background-color: yellowgreen;
+}

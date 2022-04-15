@@ -1,0 +1,44 @@
+<!-- <div class="container checktop">
+  <div class="row top-container"  >
+    <div class="col-md-4 inner-container">
+      <div class="box-1">
+        <h3>Select play mode</h3>
+        <button type="button">Player VS Computer</button>
+        <button type="button">Player VS Player</button>
+      </div>
+    </div>
+    <div class="col-md-4 inner-container">
+      <div class="box-2">
+        <div class="button-Align">
+          <button type="button"><h1>5</h1><p>Timer</p></button>
+        </div>
+        <div class="middle-align">
+          <h3>Computer</h3>
+          <hr style="background-color: white;" >
+          <h3>Player</h3>
+        </div>
+        <div class="imageValue">
+          <h3>Choose your move</h3>
+          <a (click)="onClickImage(rock)"><img #rock src="https://res.cloudinary.com/itsellej/image/upload/v1533400140/rock-paper-scissors/rock.png" alt="Rock"></a>
+          <a (click)="onClickImage(paper)"><img #paper src="https://res.cloudinary.com/itsellej/image/upload/v1533400143/rock-paper-scissors/paper.png" alt="paper"></a>
+          <a (click)="onClickImage(scissor)"><img #scissor src="https://res.cloudinary.com/itsellej/image/upload/v1533400144/rock-paper-scissors/scissors.png" alt="scissor"></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 inner-container">
+
+    </div>
+  </div>
+</div> -->
+
+<div class="wrapper "  *ngIf="playerVsPlayer?false:playerVsComputer?false:true">
+  <div class="inner-container">
+    <h3>Select play mode</h3>
+      <button class="btn" (click)="gameMenu(PlayerVSComputer)" #PlayerVSComputer type="button">Computer VS Computer</button>
+      <button class="btn" (click)="gameMenu(PlayerVSPlayer)" #PlayerVSPlayer type="button">Player VS Computer</button>
+  </div>
+</div>
+<app-game-panel *ngIf="playerVsPlayer"></app-game-panel>
+<app-game-playercomputer *ngIf="playerVsComputer"></app-game-playercomputer>
+<app-result-panel *ngIf=""></app-result-panel>
+
